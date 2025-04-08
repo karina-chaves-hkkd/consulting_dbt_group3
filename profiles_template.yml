@@ -1,0 +1,14 @@
+boardgame_project:
+  outputs:
+    default:
+      account: jsa18243
+      database: BOARDGAME
+      role: transform
+      schema: YourTeamName
+      threads: 4
+      type: snowflake
+      user: "{{ env_var('DBT_USER') }}"
+      password: "{{ env_var('DBT_PASSWORD') }}"
+      warehouse: DBT_CERTIFICATION_PROJECT_WH
+
+      
